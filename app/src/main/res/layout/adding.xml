@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#A66619"
+                    android:alpha="0.35">
+
+                </View >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/adding_back"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+
+                        android:background="@drawable/back"></Button>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginLeft="70dp"
+                        android:text="Создание"
+                        android:textAppearance="@style/header"
+                        android:textColor="#19217F"
+                        android:textSize="34dp" />
+
+
+
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:id="@+id/adding_background">
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6000dp"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/adding_name"
+                    android:layout_width="320dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#999999"
+                    android:hint="Придумайте название"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="20dp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/adding_town"
+                        android:layout_width="220dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="#999999"
+                        android:hint="Город"
+                        android:paddingHorizontal="10dp"
+
+                        android:textSize="20dp"></EditText>
+
+                    <Button
+                        android:id="@+id/adding_weather"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/weather"></Button>
+                </LinearLayout>
+
+
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                    android:id="@+id/adding_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/rectangle_rounded_all"></com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+            </RelativeLayout>
+
+            <Button
+
+                android:id="@+id/adding_next"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.85"
+                android:background="@drawable/rectangle_rounded_button"
+                android:text="Далее"
+                android:textColor="#BBBBBB"
+                android:textSize="22dp"></Button>
+
+            <Button
+                android:id="@+id/adding_add"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="590dp"
+                android:alpha="0.85"
+                android:background="@drawable/rectangle_rounded_button"
+                android:text="Добавить город"
+                android:textColor="#BBBBBB"
+
+                android:textSize="22dp"></Button>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!-->https://github.com/SpongeBobSun/mCalendarView?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=2420 - календарь со множественным выбором дат

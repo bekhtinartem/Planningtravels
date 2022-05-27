@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#A66619"
+                    android:alpha="0.35">
+
+                </View >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="50dp"
+                        android:textColor="#19217F"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:textAppearance="@style/header"
+                        android:gravity="center_vertical"
+                        android:textSize="42dp"
+                        android:text="Погода" />
+
+                    <Button
+                        android:id="@+id/weather_back"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/back"></Button>
+
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:id="@+id/weather_background">
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/rectangle_rounded_all"
+                android:alpha="0.85"></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/weather_info"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"></TextView>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:alpha="0.85"
+                    android:background="@drawable/rectangle_rounded_all"></View>
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:layout_height="300dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/weahter_data"></TextView>
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

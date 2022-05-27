@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </View>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#A66619"
+                    android:alpha="0.35">
+
+                </View >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/anyroute_name"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center_vertical"
+                        android:text="Маршрут"
+                        android:textAppearance="@style/header"
+                        android:textColor="#19217F"
+                        android:textSize="34dp" />
+
+                    <Button
+                        android:id="@+id/anyroute_back"
+                        android:layout_width="70dp"
+                        android:alpha="0.6"
+
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"></Button>
+
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/anyroutes_background"
+                android:layout_width="match_parent"
+                android:layout_height="670dp"
+                android:layout_marginTop="41dp"
+                android:alpha="0.8">
+
+            </ImageView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/anyroute_data"
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                android:layout_marginTop="100dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/anyroute_add"
+                android:textColor="#BBBBBB"
+
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.8"
+                android:background="@drawable/rectangle_rounded_button"
+                android:text="Добавить город"
+                android:textSize="22dp"></Button>
+
+            <Button
+                android:id="@+id/anyroutes_calendar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.9"
+                android:background="@drawable/calendar"></Button>
+
+            <Button
+                android:id="@+id/anyroutes_delete"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="85dp"
+                android:alpha="0.9"
+                android:background="@drawable/delete1"></Button>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
